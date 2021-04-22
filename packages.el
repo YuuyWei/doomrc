@@ -48,3 +48,13 @@
 ;(unpin! pinned-package another-pinned-package)
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
+
+;; (package! posframe)
+
+;; (package! company-posframe)
+
+;; (package! ivy-posframe)
+
+(package! rime)
+
+(package! pyim :disable t)

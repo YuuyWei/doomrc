@@ -3,6 +3,7 @@
 ;; Place your private configuration here! Remember, you do not need to run 'doom
 ;; sync' after modifying this file!
 
+;; (add-hook! 'window-setup-hook #'toggle-frame-maximized)
 
 ;; Some functionality uses this to identify you, e.g. GPG configuration, email
 ;; clients, file templates and snippets.
@@ -37,7 +38,6 @@
 ;; numbers are disabled. For relative line numbers, set this to `relative'.
 (setq display-line-numbers-type t)
 
-
 ;; Here are some additional functions/macros that could help you configure Doom:
 ;;
 ;; - `load!' for loading external *.el files relative to this one
@@ -54,3 +54,22 @@
 ;;
 ;; You can also try 'gd' (or 'C-c c d') to jump to their definition and see how
 ;; they are implemented.
+;; (use-package! company-posframe
+;;   :after company
+;;   :config
+;;   (company-posframe-mode 1))
+
+;; (use-package! ivy-posframe
+;;   :config
+;;   (setq ivy-posframe-display-functions-alist '((t . ivy-posframe-display)))
+;;   (ivy-posframe-mode 1))
+
+(use-package! rime
+  :custom
+  (default-input-method "rime")
+  ;; (rime-show-candidate 'posframe)
+  ;; (rime-show-preedit 'inline)
+  (rime-disable-predicates
+   '(rime-predicate-evil-mode-p
+     rime-predicate-after-alphabet-char-p
+     rime-predicate-prog-in-code-p)))

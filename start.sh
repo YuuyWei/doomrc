@@ -13,10 +13,10 @@ cd .emacs.d
 ./bin/doom install
 
 # config network
-ip route show
+# ip route show
 
 # install VMModule
-mount -o remount,exec /dev/sr0
+# mount -o remount,exec /dev/sr0
 
 # install flypy
 git clone https://github.com/zecy/flypy_double.git ~/.emacs.d/.local/etc/rime/flypy
