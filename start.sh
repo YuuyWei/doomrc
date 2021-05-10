@@ -19,5 +19,5 @@ cd .emacs.d
 # mount -o remount,exec /dev/sr0
 
 # install flypy
-git clone https://github.com/zecy/flypy_double.git ~/.emacs.d/.local/etc/rime/flypy
-mv flypy/** .
+git clone --depth=1 git@github.com:YuuyWei/flypy-linux.git ~/.emacs.d/.local/etc/rime/flypy
+mv -r ~/.emacs.d/.local/etc/rime/flypy/rime-data/** ~/.emacs.d/.local/etc/rime/

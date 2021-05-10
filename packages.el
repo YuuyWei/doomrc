@@ -49,7 +49,7 @@
 ;; ...Or *all* packages (NOT RECOMMENDED; will likely break things)
 ;(unpin! t)
 
-;; (package! posframe)
+(package! posframe)
 
 ;; (package! company-posframe)
 
@@ -58,3 +58,5 @@
 (package! rime)
 
 (package! pyim :disable t)
+
+(package! flyspell :disable t)

@@ -65,11 +65,14 @@
 ;;   (ivy-posframe-mode 1))
 
 (use-package! rime
+  :config
+  (define-key rime-active-mode-map (kbd "M-j") 'rime-inline-ascii)
   :custom
   (default-input-method "rime")
-  ;; (rime-show-candidate 'posframe)
+  (rime-show-candidate 'posframe)
   ;; (rime-show-preedit 'inline)
   (rime-disable-predicates
    '(rime-predicate-evil-mode-p
      rime-predicate-after-alphabet-char-p
+     rime-predicate-space-after-cc-p
      rime-predicate-prog-in-code-p)))
